@@ -204,3 +204,4 @@ class CreateCoursePage(BasePage):
 
         exercise_description_input.fill(description)
         expect(exercise_description_input).to_have_value(description)
+
