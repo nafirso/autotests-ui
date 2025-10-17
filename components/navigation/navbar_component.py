@@ -12,7 +12,7 @@ class NavbarComponent(BaseComponent):
 
     def check_visible(self, username: str):
         expect(self.app_title).to_be_visible()
-        expect(self.welcome_title).to_have_text('UI Course')
+        expect(self.app_title).to_have_text('UI Course')
 
         expect(self.welcome_title).to_be_visible()
-        expect(self.welcome_title).to_have_text(F'Welcome, {username}')
+        expect(self.welcome_title).to_have_text(f'Welcome, {username}!')
