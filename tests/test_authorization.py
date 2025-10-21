@@ -13,8 +13,7 @@ from pages.login_page import LoginPage
         ("  ", "password")
     ]
 )
-def test_wrong_email_or_password_authorization(chromium_page: Page, email: str, password: str):
-    login_page = LoginPage(page=chromium_page)
+def test_wrong_email_or_password_authorization(login_page: LoginPage, email: str, password: str):
     login_page.visit("https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/auth/login")
     login_page.login_form.fill_form(email=email, password=password)
     login_page.login_form.check_visible(email=email, password=password)
