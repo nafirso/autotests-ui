@@ -6,7 +6,7 @@ from elements.input import Input
 from elements.text import Text
 
 
-class CreateCourseExerciseFormComponent(BaseComponent):
+class CreateCourseExercisesFormComponent(BaseComponent):
     def __init__(self, page: Page):
         super().__init__(page)
 
