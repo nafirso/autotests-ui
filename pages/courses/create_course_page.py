@@ -20,7 +20,7 @@ class CreateCoursePage(BasePage):
         self.create_course_toolbar = CreateCourseToolbarViewComponent(page)
         self.create_exercise_form = CreateCourseExercisesFormComponent(page)
         self.exercises_empty_view = EmptyViewComponent(page, 'create-course-exercises')
-        self.create_exercise_toolbar = CreateCourseExercisesToolbarViewComponent(page)
+        self.create_exercises_toolbar = CreateCourseExercisesToolbarViewComponent(page)
 
     def check_visible_exercises_empty_view(self):
         self.exercises_empty_view.check_visible(
